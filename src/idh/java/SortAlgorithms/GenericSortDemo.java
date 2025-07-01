@@ -25,7 +25,7 @@ public class GenericSortDemo {
 		System.out.println(Arrays.toString(toProcess));
 		
 		toProcess = Arrays.copyOf(studis, studis.length);
-		// nächster Algorithmus
+		gsa.quickSort(toProcess);
 		System.out.println(Arrays.toString(toProcess));
 	}
 
