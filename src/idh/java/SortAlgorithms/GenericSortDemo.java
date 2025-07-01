@@ -21,7 +21,7 @@ public class GenericSortDemo {
 		
 		//Nicht vergessen, Array vor jedem Aufruf neu zu kopieren! Bsp mit insertionSort:
 		Student[] toProcess = Arrays.copyOf(studis, studis.length);
-		gsa.insertionSort(toProcess);
+		gsa.bubbleSort(toProcess);
 		System.out.println(Arrays.toString(toProcess));
 		
 		toProcess = Arrays.copyOf(studis, studis.length);
