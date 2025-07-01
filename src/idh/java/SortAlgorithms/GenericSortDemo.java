@@ -27,6 +27,14 @@ public class GenericSortDemo {
 		toProcess = Arrays.copyOf(studis, studis.length);
 		// nächster Algorithmus
 		System.out.println(Arrays.toString(toProcess));
+		
+
+
+		
+		
+		
+		
+		
 	}
 
 }
