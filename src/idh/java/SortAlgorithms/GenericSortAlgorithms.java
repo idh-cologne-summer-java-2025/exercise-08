@@ -12,7 +12,17 @@ public class GenericSortAlgorithms <T extends Comparable<T>>{
     }
 
     public void selectionSort(T[] arr) {
-        
+    T anchor = arr[0]; 
+    T temp;
+    for(int i = 0; i<arr.length;i++) {
+    	if(anchor.compareTo(arr[i])>0) {
+    		temp = arr[i];
+    		anchor = arr[i];
+    		temp = anchor;
+    		this.selectionSort(arr);
+    		
+    	}
+    }
     }
 
     public void insertionSort(T[] arr) {
