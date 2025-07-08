@@ -19,13 +19,16 @@ public class GenericSortDemo {
 		
 		GenericSortAlgorithms<Student> gsa = new GenericSortAlgorithms<Student>();
 		
-		//Nicht vergessen, Array vor jedem Aufruf neu zu kopieren! Bsp mit insertionSort:
+		
+
+		System.out.println("Insertion Sort");//Nicht vergessen, Array vor jedem Aufruf neu zu kopieren! Bsp mit insertionSort:
 		Student[] toProcess = Arrays.copyOf(studis, studis.length);
 		gsa.insertionSort(toProcess);
 		System.out.println(Arrays.toString(toProcess));
-		
+		System.out.println("merge sort");
 		toProcess = Arrays.copyOf(studis, studis.length);
 		// nächster Algorithmus
+		
 		System.out.println(Arrays.toString(toProcess));
 	}
 
