@@ -27,6 +27,17 @@ public class GenericSortDemo {
 		toProcess = Arrays.copyOf(studis, studis.length);
 		// nächster Algorithmus
 		System.out.println(Arrays.toString(toProcess));
+		
+		
+		//SelectionSort
+		toProcess = Arrays.copyOf(studis, studis.length);
+		gsa.selectionSort(toProcess);
+		System.out.println(Arrays.toString(toProcess));
+		
+		//MergeSort
+		toProcess = Arrays.copyOf(studis, studis.length);
+		gsa.mergeSort(toProcess);
+		System.out.println(Arrays.toString(toProcess));
 	}
 
 }
