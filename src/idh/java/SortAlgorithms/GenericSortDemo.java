@@ -17,16 +17,26 @@ public class GenericSortDemo {
 		studis[8] = new Student("Jakob Harnal", 1234522);
 		studis[9] = new Student("Thomas Joachimtochter", 1234123);
 		
-		GenericSortAlgorithms<Student> gsa = new GenericSortAlgorithms<Student>();
+		GenericSortAlgorithms<Student> gsa = new GenericSortAlgorithms<>();
 		
-		//Nicht vergessen, Array vor jedem Aufruf neu zu kopieren! Bsp mit insertionSort:
-		Student[] toProcess = Arrays.copyOf(studis, studis.length);
-		gsa.insertionSort(toProcess);
-		System.out.println(Arrays.toString(toProcess));
+		System.out.println("Originales Array:");
+		System.out.println(Arrays.toString(studis));
+		System.out.println("------------------------------------------");
+
+		// Test des Insertion-Sort-Algorithmus
+		Student[] toProcessInsertion = Arrays.copyOf(studis, studis.length);
+		System.out.println("Sortiere mit Insertion Sort...");
+		gsa.insertionSort(toProcessInsertion);
+		System.out.println("Ergebnis:");
+		System.out.println(Arrays.toString(toProcessInsertion));
+		System.out.println("------------------------------------------");
 		
-		toProcess = Arrays.copyOf(studis, studis.length);
-		// nächster Algorithmus
-		System.out.println(Arrays.toString(toProcess));
+		// Test des Quick-Sort-Algorithmus
+		Student[] toProcessQuick = Arrays.copyOf(studis, studis.length);
+		System.out.println("Sortiere mit Quick Sort...");
+		gsa.quickSort(toProcessQuick);
+		System.out.println("Ergebnis:");
+		System.out.println(Arrays.toString(toProcessQuick));
 	}
 
 }
